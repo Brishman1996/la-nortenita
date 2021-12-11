@@ -1,0 +1,281 @@
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css");
+@font-face {
+  font-family: "Font-Awesome_Regular-400";
+  src: url("/fonts/icons/Font-Awesome-5-Brands-Regular-400.otf");
+}
+.logo {
+  width: 210px;
+  height: 61px;
+}
+.logo-box {
+  text-align: center;
+}
+
+.cabecera-margin {
+  display: block;
+  height: 81px;
+}
+
+.cabecera {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #bd1522;
+  min-height: 81px;
+  display: flex;
+  position: fixed;
+  width: 100%;
+}
+.cabecera .banner {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+  justify-content: space-between;
+  margin: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.cabecera .banner-info {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: calc(100% - 210px);
+  padding-left: 30px;
+  align-items: center;
+}
+.cabecera .banner-info .user {
+  display: flex;
+  max-width: 200px;
+  align-items: center;
+}
+.cabecera .banner-info .user-img {
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.cabecera .banner-info .user-sesion {
+  padding-left: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.cabecera .banner-info .user-sesion_nombre {
+  font-weight: 600;
+  font-size: 17px;
+}
+.cabecera .banner-info .user-sesion_rol {
+  font-size: 13px;
+  color: gray;
+}
+.cabecera .banner-info_title .hello {
+  display: block;
+  font-weight: 600;
+  color: black;
+  font-size: 20px;
+}
+.cabecera .banner-info_title .slug {
+  color: #9b9b9b;
+  font-size: 15px;
+}
+
+/*ESTILO BARRA LATERAL*/
+.barra-lateral {
+  background-color: #f7f7f7;
+  position: fixed;
+  float: left;
+  align-items: stretch;
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 240px;
+  max-width: 240px;
+  overflow: hidden;
+  border-right: 1px solid #bd1522;
+  height: 100vh;
+}
+
+.menu {
+  height: 100%;
+  margin-top: 30px;
+}
+.menu-elementos {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.menu-elementos li {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.menu-elementos li:hover .fas {
+  color: white;
+  background-color: #bd1522;
+  border-radius: 100%;
+  transition: all 500ms;
+}
+.menu-elementos li a {
+  width: 100%;
+  text-decoration: none;
+  padding: 4px;
+  padding-left: 24px;
+  color: #bd1522;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  transition: all 500ms;
+}
+.menu-elementos li a:hover {
+  background-color: #bd1522;
+  color: #eef2f5;
+  transition: all 500ms;
+}
+.menu-elementos li a::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 34px;
+  background-color: #f7f7f7;
+  position: absolute;
+  left: 53px;
+  margin-top: -8px;
+  border-bottom-right-radius: 100%;
+  border-top-right-radius: 100%;
+}
+.menu-elementos li .fas {
+  display: flex;
+  width: 37px;
+  height: 33px;
+  align-items: center;
+  padding: 8px;
+  border: 100%;
+  color: #bd1522;
+  transition: all 500ms;
+}
+.menu-elementos .activo .fas {
+  color: #bd1522;
+}
+.menu-elementos .activo a {
+  background-color: #bd1522;
+  color: #eef2f5;
+}
+
+/*ESTILO DASHBOARD*/
+.container-dashboard {
+  background-color: #ffebed;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.content {
+  float: right;
+  width: calc(100% - 280px);
+  margin: 20px;
+  margin-top: 30px;
+}
+.content-bloques {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.componente {
+  display: block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: #ffffff9e;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 2px 0px 15px 5px rgba(137, 137, 137, 0.05);
+}
+.componente-title {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.unset {
+  background-color: #ffebed00;
+  box-shadow: none;
+  padding: 0;
+}
+.unset .componente-title {
+  text-shadow: -1px 1px 3px rgba(76, 76, 76, 0.88);
+}
+.unset .descripcion {
+  background-color: #ffffff9e;
+  padding: 20px;
+  box-shadow: 2px 0px 15px 5px rgba(137, 137, 137, 0.05);
+  border-radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  font-family: "Plus Jakarta Display", sans-serif;
+}
+
+p {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.fondo {
+  background-image: url(https://www.esan.edu.pe/apuntes-empresariales/2019/12/11/1500x844_restaurantes_offline.jpg);
+}
+
+.container .box {
+  max-width: 400px;
+  margin: 80px auto;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+}
+.container .box img {
+  display: block;
+  margin: 0 auto;
+}
+.container .box h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container .box h1 span {
+  display: block;
+  color: #bd1522;
+}
+.container .box #form-login {
+  width: 250px;
+  margin: auto;
+  padding-bottom: 5px;
+}
+.container .box #form-login label {
+  display: block;
+  font-weight: 700;
+}
+.container .box #form-login input {
+  border-radius: 5px;
+  border: white;
+  display: block;
+  width: 100%;
+  height: 25px;
+  margin-right: 0px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.container .box #form-login button {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #bd1522;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */

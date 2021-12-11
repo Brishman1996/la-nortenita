@@ -1,0 +1,83 @@
+/*ESTILO BARRA LATERAL*/
+.barra-lateral {
+  background-color: #f7f7f7;
+  position: fixed;
+  float: left;
+  align-items: stretch;
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 240px;
+  max-width: 240px;
+  overflow: hidden;
+  border-right: 1px solid #bd1522;
+  height: 100vh;
+}
+
+.menu {
+  height: 100%;
+  margin-top: 30px;
+  &-elementos {
+    margin-left: 20px;
+    margin-right: 20px;
+    li {
+      display: flex;
+      width: 100%;
+      list-style: none;
+      align-items: center;
+      font-weight: 600;
+      margin-bottom: 10px;
+      &:hover .fas {
+        color: white;
+        background-color: #bd1522;
+        border-radius: 100%;
+        transition: all 500ms;
+      }
+      a {
+        width: 100%;
+        text-decoration: none;
+        padding: 4px;
+        padding-left: 24px;
+        color: #bd1522;
+        border-top-right-radius: 18px;
+        border-bottom-right-radius: 18px;
+        transition: all 500ms;
+        &:hover {
+          background-color: #bd1522;
+          color: #eef2f5;
+          transition: all 500ms;
+        }
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 10px;
+          height: 34px;
+          background-color: #f7f7f7;
+          position: absolute;
+          left: 53px;
+          margin-top: -8px;
+          border-bottom-right-radius: 100%;
+          border-top-right-radius: 100%;
+        }
+      }
+      .fas {
+        display: flex;
+        width: 37px;
+        height: 33px;
+        align-items: center;
+        padding: 8px;
+        border: 100%;
+        color: #bd1522;
+        transition: all 500ms;
+      }
+    }
+    .activo {
+      .fas {
+        color: #bd1522;
+      }
+      a {
+        background-color: #bd1522;
+        color: #eef2f5;
+      }
+    }
+  }
+}

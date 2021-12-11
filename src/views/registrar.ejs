@@ -1,0 +1,24 @@
+<body class="fondo"> 
+    <div class="container">
+        <div class="box">
+            <img src="/img/logo-la-norteñita.jpeg" alt="logo" width="300px">
+            <h1>Registrate <span>La Norteñita</span></h1>
+            <form id="form-login" action="/registrar" method="POST">
+                <label for="nombre">Ingresa tu nombre:</label>
+                <input type="text" name="nombre" id="nombre">
+                <label for="">Seleccione un rol:</label>
+                <select id="rol" name="rol">
+                    <option value="Administrador">Administrador</option>
+                    <option value="Supervisor">Supervisor</option>
+                    <option value="Invitado">Invitado</option>
+                </select>
+                <label for="user">Ingrese su correo:</label>
+                <input type="email" name="correo" id="user">
+                <label for="password">Establesca su contraseña:</label>
+                <input type="password" name="contrasena" id="password">
+                <button type="submit">Registrarse</button>
+                <span><a href="/">Ya tengo una cuenta</a></span>
+            </form>
+        </div>
+    </div>
+</body>

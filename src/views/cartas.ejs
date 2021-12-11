@@ -1,0 +1,54 @@
+<body>
+    <div class="content-bloques">
+        <div class="componente inset">
+            <span class="componente-title">Cartas Registradas</span>
+            <div class="descripcion">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut praesentium, soluta laborum quas ipsum hic velit fugit maxime explicabo quidem doloremque facilis. Cum omnis neque laudantium libero expedita. Quis, sapiente.
+                
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et pariatur placeat eligendi atque officiis! Neque facere provident culpa totam similique, doloremque vitae excepturi itaque eos! Ut aliquid consequuntur necessitatibus corrupti.
+                </p>
+                <ol>
+                <% if (typeof cartas !== 'undefined') { %>
+                        <% for( let index in cartas) { %>
+                            <li><%= cartas[index].nombre %> </li>
+                        <% } %>
+                <% } %>
+                </ol>
+            </div>
+        </div>
+        <div class="componente unset">
+            <span class="componente-title">Portafolios</span>
+            <div class="descripcion">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut praesentium, soluta laborum quas ipsum hic velit fugit maxime explicabo quidem doloremque facilis. Cum omnis neque laudantium libero expedita. Quis, sapiente.
+                
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et pariatur placeat eligendi atque officiis! Neque facere provident culpa totam similique, doloremque vitae excepturi itaque eos! Ut aliquid consequuntur necessitatibus corrupti.
+                </p>
+            </div>
+        </div>
+        <div class="componente inset">
+            <span class="componente-title">Portafolios</span>
+            <div class="descripcion">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut praesentium, soluta laborum quas ipsum hic velit fugit maxime explicabo quidem doloremque facilis. Cum omnis neque laudantium libero expedita. Quis, sapiente.
+                
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et pariatur placeat eligendi atque officiis! Neque facere provident culpa totam similique, doloremque vitae excepturi itaque eos! Ut aliquid consequuntur necessitatibus corrupti.
+                </p>
+                <ol>
+                    <% if (typeof platos !== 'undefined') { %>
+                        <% for( let index in platos) { %>
+                        <li><%= platos[index].nombre %> </li>
+                            <% } %>
+                    <% } %>
+                    </ol>
+            </div>
+        </div>
+        <div class="componente unset">
+            <span class="componente-title">Platos</span>
+            <div class="descripcion">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut praesentium, soluta laborum quas ipsum hic velit fugit maxime explicabo quidem doloremque facilis. Cum omnis neque laudantium libero expedita. Quis, sapiente.
+                
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et pariatur placeat eligendi atque officiis! Neque facere provident culpa totam similique, doloremque vitae excepturi itaque eos! Ut aliquid consequuntur necessitatibus corrupti.
+                </p>
+            </div>
+        </div>
+    </div>  
+</body>

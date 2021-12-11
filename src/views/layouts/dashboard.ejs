@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title><%= title %> </title>
+</head>
+<body>
+    <div class="container-dashboard">
+        <header  class="cabecera">
+            <%- include('../parcial/header.ejs') %>
+        </header>
+        <div class="cabecera-margin"></div>
+        <aside class="barra-lateral">
+            <%- include('../parcial/sidebar.ejs') %> 
+        </aside>
+        <main class="content">
+            <%- body %> 
+        </main>
+        <div style='float: none;
+        clear: both'></div>
+    </div>
+
+    <!-- <div style="display: none;">
+        <label id= "id" for=""><'%= pass %''> </label>
+    </div>
+    
+    <script>
+        let cont = document.getElementById("id").innerText;
+        sessionStorage.setItem("pass",cont);
+    </script> -->
+</body>
+</html>
