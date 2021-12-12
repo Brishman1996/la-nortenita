@@ -2,7 +2,11 @@ const path = require('path'); //Rutas
 const express = require('express'); //Para server
 const logger = require('morgan'); //Registro de solicitudes en consola desarrolador
 const bodyParse = require('body-parser');//Leer contenedio de las solicitudes REST
-const app = express();
+const app = express(); //Iniciar servidor
+
+//require('./src/libs/shema');
+
+
 const indexRoutes = require('./src/routers/index');
 const expressLayouts = require('express-ejs-layouts'); //Gestion de diseño ejs Parciales
 

@@ -4,12 +4,15 @@ const express = require('express');
 const { endianness } = require('os');
 const router = express.Router()
 const client = require('../libs/connect')()
+//Shema Mongoose
+const mongoose =  require('../libs/shema');
 
 
 
 router.get('/', (req, res) => {
    res.render('index',{title : 'Iniciar Sesión',layout: './layouts/default'});
    // console.log(req.body)
+   mongoose();
 })
 router.get('/dashboard', (req, res) => {
    res.render('dashboard', {title: 'Dashboard', slug: ''});
@@ -51,6 +54,9 @@ router.get('/registrar',(req, res)=>{
    
 });
 router.post('/registrar',(req, res)=>{
+
+   //const {} = req.body;
+   
       let nombre = req.body.nombre;
       let rol = req.body.rol;
       let correo = req.body.correo;
